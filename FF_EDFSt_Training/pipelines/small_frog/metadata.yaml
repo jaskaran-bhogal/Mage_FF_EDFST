@@ -1,0 +1,47 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - late_waterfall
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: dummy data loader
+  retry_config: null
+  status: executed
+  type: data_loader
+  upstream_blocks: []
+  uuid: dummy_data_loader
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: late waterfall
+  retry_config: null
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - dummy_data_loader
+  uuid: late_waterfall
+callbacks: []
+conditionals: []
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: small frog
+notification_config: {}
+retry_config: {}
+spark_config: {}
+type: python
+updated_at: '2023-07-17 18:48:57'
+uuid: small_frog
+widgets: []

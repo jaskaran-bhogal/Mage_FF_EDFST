@@ -1,0 +1,95 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - white_firefly
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: damp sunset
+  retry_config: null
+  status: updated
+  type: data_loader
+  upstream_blocks: []
+  uuid: damp_sunset
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - icy_sound
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: white firefly
+  retry_config: null
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - damp_sunset
+  uuid: white_firefly
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - dark_resonance
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: icy sound
+  retry_config: null
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - white_firefly
+  uuid: icy_sound
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - still_forest
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: dark resonance
+  retry_config: null
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - icy_sound
+  uuid: dark_resonance
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: still forest
+  retry_config: null
+  status: updated
+  type: transformer
+  upstream_blocks:
+  - dark_resonance
+  uuid: still_forest
+callbacks: []
+conditionals: []
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: divine thunder
+notification_config: {}
+retry_config: {}
+spark_config: {}
+type: python
+updated_at: '2023-08-15 16:34:06'
+uuid: divine_thunder
+widgets: []
