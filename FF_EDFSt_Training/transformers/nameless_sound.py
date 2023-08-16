@@ -26,6 +26,7 @@ def transform(data, *args, **kwargs):
     with open(filepath,'rb') as f:
         scaler_data = pickle.load(f)
     model_path='ff_edfst/exported_models/conv_model.tflite'
+    print('i was added from github cloud')
 # Load TFLite model and allocate tensors.
     
     # Get input and output tensors.
